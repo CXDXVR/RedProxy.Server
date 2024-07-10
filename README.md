@@ -36,27 +36,27 @@ This configuration file should contain several sections with the following param
 
 #### SOCKS4 Section
 
-| Key             | Value      | Description                                                                              | 
-|-----------------|------------|------------------------------------------------------------------------------------------|
-| enable          | bool       | Enable socks4 server. `true` by default.                                                 | 
-| enable_connect  | bool       | Enable `CONNECT` command. `true` by default.                                             |
-| enable_bind     | bool       | Enable `BIND` command. `true` by default.                                                |
-| user_id         | string     | The value of authorization. If it is empty, authorization is required. Empty by default. |
-| address         | string     | Server address. By default `127.0.0.1`                                                   |
-| port            | uint16_t   | Server port. By default `1080`.                                                          |
+| Key             | Value      | Description                                                                                  | 
+|-----------------|------------|----------------------------------------------------------------------------------------------|
+| enable          | bool       | Enable socks4 server. `true` by default.                                                     | 
+| enable_connect  | bool       | Enable `CONNECT` command. `true` by default.                                                 |
+| enable_bind     | bool       | Enable `BIND` command. `true` by default.                                                    |
+| user_id         | string     | The value of authorization. If it is empty, authorization is not required. Empty by default. |
+| address         | string     | Server address. By default `127.0.0.1`                                                       |
+| port            | uint16_t   | Server port. By default `1080`.                                                              |
 
 #### SOCKS5 Section
 
-| Key             | Value      | Description                                                                              | 
-|-----------------|------------|------------------------------------------------------------------------------------------|
-| enable          | bool       | Enable socks4 server. `true` by default.                                                 | 
-| enable_connect  | bool       | Enable `CONNECT` command. `true` by default.                                             |
-| enable_bind     | bool       | Enable `BIND` command. `true` by default.                                                |
-| enable_udp      | bool       | Enable `UDP-ASSOCIATE` command. `true` by default.                                       |
-| username        | string     | The value of authorization. If it is empty, authorization is required. Empty by default. |
-| password        | string     | The value of authorization. If it is empty, authorization is required. Empty by default. |
-| address         | string     | Server address. By default `127.0.0.1`                                                   |
-| port            | uint16_t   | Server port. By default `1081`.                                                          |
+| Key             | Value      | Description                                                                                  | 
+|-----------------|------------|----------------------------------------------------------------------------------------------|
+| enable          | bool       | Enable socks4 server. `true` by default.                                                     | 
+| enable_connect  | bool       | Enable `CONNECT` command. `true` by default.                                                 |
+| enable_bind     | bool       | Enable `BIND` command. `true` by default.                                                    |
+| enable_udp      | bool       | Enable `UDP-ASSOCIATE` command. `true` by default.                                           |
+| username        | string     | The value of authorization. If it is empty, authorization is not required. Empty by default. |
+| password        | string     | The value of authorization. If it is empty, authorization is not required. Empty by default. |
+| address         | string     | Server address. By default `127.0.0.1`                                                       |
+| port            | uint16_t   | Server port. By default `1081`.                                                              |
 
 ### `settings.ini` example:
 ```ini
